@@ -19,3 +19,5 @@ make
 sudo make install
 sudo systemctl enable lightdm
 sudo systemctl set-default lightdm.target
+
+sudo reboot
