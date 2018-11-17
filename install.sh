@@ -1,10 +1,10 @@
-sudo yum install -y libXft-devel libXinerama-devel fontpackages-devel
-sudo yum install -y git gcc gdb vim
-sudo yum groupinstall -y "X Window System"
-sudo yum install -y open-vm-tools gnome-terminal
+# USE AT YOUR OWN RISK
 
-sudo yum install -y epel-release 
-sudo yum install -y lightdm
+sudo yum install -y libXft-devel libXinerama-devel fontpackages-devel #dwm prerequisites
+sudo yum install -y git gcc gdb vim #dev tools
+
+sudo yum groupinstall -y "X Window System"
+sudo yum install -y lightdm open-vm-tools gnome-terminal epel-release
 
 
 if [ -d dwm ]
@@ -13,7 +13,6 @@ then
 fi
 
 git clone https://git.suckless.org/dwm
-
 
 cd dwm
 
